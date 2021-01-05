@@ -25,11 +25,7 @@ class MyDocument extends Document<DocumentProps> {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap"
-          />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
           />
         </Head>
         <body>

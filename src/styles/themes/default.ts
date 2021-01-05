@@ -11,14 +11,14 @@ const theme = {
     },
   },
   fonts: {
-    body: 'Ubuntu, Helvetica, Arial, sans-serif',
-    heading: 'Ubuntu, Helvetica, Arial, sans-serif',
+    body: 'Titillium Web, Helvetica, Arial, sans-serif',
+    heading: 'Titillium Web, Helvetica, Arial, sans-serif',
     mono: 'monospace',
   },
   fontWeights: {
     normal: 400,
     regular: 400,
-    semibold: 500,
+    semibold: 600,
     bold: 700,
   },
   colors: {
