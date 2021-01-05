@@ -16,7 +16,10 @@ const FormLogin: React.FC = () => {
   }, []);
 
   return (
-    <motion.div>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.7, y: -100 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+    >
       <AppBox
         display="flex"
         flexDirection="column"
