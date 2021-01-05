@@ -1,6 +1,7 @@
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
       <Head>
@@ -11,5 +12,7 @@ export default function Home() {
         <h1>Next.js Boilerplate</h1>
       </main>
     </>
-  )
-}
+  );
+};
+
+export default Home;
