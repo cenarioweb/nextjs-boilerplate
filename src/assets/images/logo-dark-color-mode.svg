@@ -1,0 +1,84 @@
+<svg version="1.1" viewBox="0 0 493.57 133.88" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath>
+   <path d="m0 500v-500h500v500z"/>
+  </clipPath>
+  <clipPath id="clipPath18496">
+   <path d="m156.62 318.44c-7.634-7.635-7.634-20.012 0-27.647l51.262-51.261c7.633-7.634 20.011-7.634 27.645 0 7.635 7.635 7.635 20.012 0 27.646l-51.261 51.262c-3.817 3.816-8.82 5.725-13.823 5.725-5.002 0-10.005-1.909-13.823-5.725"/>
+  </clipPath>
+  <linearGradient id="linearGradient18508" x2="1" gradientTransform="matrix(90.358 0 0 -90.358 150.9 278.99)" gradientUnits="userSpaceOnUse">
+   <stop style="stop-color:#6400ff" offset="0"/>
+   <stop style="stop-color:#6400ff" offset=".31683"/>
+   <stop style="stop-color:#ef2fb1" offset="1"/>
+  </linearGradient>
+  <clipPath id="clipPath18518">
+   <path d="m207.89 369.77-51.262-51.261c-7.634-7.634-7.634-20.012 0-27.646 7.635-7.634 20.012-7.634 27.646 0l51.261 51.261c7.635 7.635 7.635 20.011 0 27.646-3.817 3.817-8.82 5.725-13.823 5.725s-10.006-1.908-13.822-5.725"/>
+  </clipPath>
+  <linearGradient id="linearGradient18532" x2="1" gradientTransform="matrix(90.358 0 0 -90.358 150.9 330.32)" gradientUnits="userSpaceOnUse">
+   <stop style="stop-color:#ff9199" offset="0"/>
+   <stop style="stop-color:#ff9199" offset=".0085977"/>
+   <stop style="stop-color:#ff9199" offset=".11341"/>
+   <stop style="stop-color:#ef2fb1" offset="1"/>
+  </linearGradient>
+  <clipPath id="clipPath18542">
+   <path d="m264.47 369.77c-7.634-7.635-7.634-20.011 0-27.646l51.261-51.261c7.634-7.634 20.011-7.634 27.645 0h1e-3c7.634 7.634 7.634 20.012 0 27.646l-51.261 51.261c-3.818 3.817-8.82 5.725-13.823 5.725s-10.006-1.908-13.823-5.725"/>
+  </clipPath>
+  <linearGradient id="linearGradient18554" x2="1" gradientTransform="matrix(90.358 0 0 -90.358 258.74 330.32)" gradientUnits="userSpaceOnUse">
+   <stop style="stop-color:#6400ff" offset="0"/>
+   <stop style="stop-color:#6400ff" offset=".31683"/>
+   <stop style="stop-color:#ef2fb1" offset="1"/>
+  </linearGradient>
+  <clipPath id="clipPath18564">
+   <path d="m315.73 318.44-51.261-51.262c-7.634-7.634-7.634-20.011 0-27.646 7.634-7.634 20.011-7.634 27.646 0l51.261 51.261c7.634 7.635 7.634 20.012 0 27.647h-1e-3c-3.817 3.816-8.82 5.725-13.822 5.725-5.003 0-10.006-1.909-13.823-5.725"/>
+  </clipPath>
+  <linearGradient id="linearGradient18578" x2="1" gradientTransform="matrix(90.358 0 0 -90.358 258.74 278.99)" gradientUnits="userSpaceOnUse">
+   <stop style="stop-color:#ff9199" offset="0"/>
+   <stop style="stop-color:#ff9199" offset=".0085977"/>
+   <stop style="stop-color:#ff9199" offset=".11341"/>
+   <stop style="stop-color:#ef2fb1" offset="1"/>
+  </linearGradient>
+  <clipPath id="clipPath18588">
+   <path d="m0 500h500v-500h-500z"/>
+  </clipPath>
+  <clipPath id="clipPath18596">
+   <path d="m150.92 324.14h38.979v-38.979h-38.979z"/>
+  </clipPath>
+  <clipPath id="clipPath18612">
+   <path d="m310.1 324.14h38.979v-38.979h-38.979z"/>
+  </clipPath>
+ </defs>
+ <g transform="matrix(1.3333 0 0 -1.3333 -86.547 400.27)">
+  <text transform="scale(1,-1)" x="236.77295" y="-239.45857" style="fill:#f2f2f2;font-family:Heavitas;font-feature-settings:normal;font-size:66.679px;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:2.2226">
+   <tspan x="236.77295" y="-239.45857" style="fill:#f2f2f2;font-family:Heavitas;font-feature-settings:normal;font-size:66.679px;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:2.2226">CODE</tspan>
+  </text>
+  <text transform="scale(1,-1)" x="336.6218" y="-214.39424" style="fill:#ae5fff;font-family:'Fira Code';font-feature-settings:normal;font-size:16.643px;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;stroke-width:1.0402;text-align:center;text-anchor:middle">
+   <tspan x="336.6218" y="-214.39424" style="fill:#ae5fff;stroke-width:1.0402">software development</tspan>
+  </text>
+  <g transform="matrix(.70867 0 0 .70867 -42.028 34.1)">
+   <g clip-path="url(#clipPath18496)">
+    <path d="m156.62 318.44c-7.634-7.635-7.634-20.012 0-27.647l51.262-51.261c7.633-7.634 20.011-7.634 27.645 0 7.635 7.635 7.635 20.012 0 27.646l-51.261 51.262c-3.817 3.816-8.82 5.725-13.823 5.725-5.002 0-10.005-1.909-13.823-5.725" style="fill:url(#linearGradient18508)"/>
+   </g>
+   <g clip-path="url(#clipPath18518)">
+    <path d="m207.89 369.77-51.262-51.261c-7.634-7.634-7.634-20.012 0-27.646 7.635-7.634 20.012-7.634 27.646 0l51.261 51.261c7.635 7.635 7.635 20.011 0 27.646-3.817 3.817-8.82 5.725-13.823 5.725s-10.006-1.908-13.822-5.725" style="fill:url(#linearGradient18532)"/>
+   </g>
+   <g clip-path="url(#clipPath18542)">
+    <path d="m264.47 369.77c-7.634-7.635-7.634-20.011 0-27.646l51.261-51.261c7.634-7.634 20.011-7.634 27.645 0h1e-3c7.634 7.634 7.634 20.012 0 27.646l-51.261 51.261c-3.818 3.817-8.82 5.725-13.823 5.725s-10.006-1.908-13.823-5.725" style="fill:url(#linearGradient18554)"/>
+   </g>
+   <g clip-path="url(#clipPath18564)">
+    <path d="m315.73 318.44-51.261-51.262c-7.634-7.634-7.634-20.011 0-27.646 7.634-7.634 20.011-7.634 27.646 0l51.261 51.261c7.634 7.635 7.634 20.012 0 27.647h-1e-3c-3.817 3.816-8.82 5.725-13.822 5.725-5.003 0-10.006-1.909-13.823-5.725" style="fill:url(#linearGradient18578)"/>
+   </g>
+   <g clip-path="url(#clipPath18588)">
+    <g clip-path="url(#clipPath18596)" style="opacity:.22">
+     <g transform="translate(150.92 304.65)">
+      <path d="m0 0c0-10.764 8.726-19.49 19.49-19.49 10.763 0 19.489 8.726 19.489 19.49s-8.726 19.49-19.489 19.49c-10.764 0-19.49-8.726-19.49-19.49" style="fill:#1b0044"/>
+     </g>
+    </g>
+    <g clip-path="url(#clipPath18612)" style="opacity:.22">
+     <g transform="translate(310.1 304.65)">
+      <path d="m0 0c0-10.764 8.726-19.49 19.49-19.49s19.489 8.726 19.489 19.49-8.725 19.49-19.489 19.49-19.49-8.726-19.49-19.49" style="fill:#1b0044"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

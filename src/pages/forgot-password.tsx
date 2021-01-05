@@ -2,22 +2,21 @@ import React from 'react';
 import Head from 'next/head';
 import { Button, Flex, Heading, Image } from '@chakra-ui/react';
 
-import AppBox from '../components/AppBox';
-
 import HomeBackground from '../components/HomeBackground';
 
 import logoImg from '../assets/images/logo-light-color-mode.svg';
-import backgroundImage from '../assets/images/login-background.jpg';
+import backgroundImage from '../assets/images/forgot-password-background.jpg';
+import AppBox from '../components/AppBox';
 import AppLink from '../components/AppLink';
 
 const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>SignIn</title>
+        <title>Forgot my password</title>
       </Head>
       <Flex
-        direction="row"
+        direction="row-reverse"
         alignItems="center"
         width="100vw"
         height="100vh"
@@ -39,17 +38,17 @@ const Home: React.FC = () => {
             margin="0 auto"
           />
           <Heading textAlign="center" size="lg" margin="40px 0 20px 0">
-            Acesso ao sistema
+            Recuperar senha
           </Heading>
 
-          <AppLink href="/forgot-password">
+          <AppLink href="/">
             <Button colorScheme="theme" variant="outline" isFullWidth>
-              Esqueci minha senha
+              Voltar para o login
             </Button>
           </AppLink>
         </AppBox>
       </Flex>
-      <HomeBackground image={backgroundImage} />
+      <HomeBackground ribbonSide="right" image={backgroundImage} />
     </>
   );
 };
