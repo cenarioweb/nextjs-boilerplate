@@ -4,7 +4,6 @@ import { Flex } from '@chakra-ui/react';
 
 import { FormLogin } from '../components/AppForm';
 import HomeBackground from '../components/HomeBackground';
-
 import backgroundImage from '../assets/images/login-background.jpg';
 
 const Home: React.FC = () => {
@@ -15,11 +14,11 @@ const Home: React.FC = () => {
       </Head>
       <Flex
         direction="row"
-        alignItems="center"
+        alignItems={{ base: 'stretch', md: 'center' }}
         width="100vw"
         height="100vh"
-        padding="60px"
-        position="relative"
+        padding={{ base: '20px', md: '60px' }}
+        overflow="hidden"
       >
         <FormLogin />
       </Flex>

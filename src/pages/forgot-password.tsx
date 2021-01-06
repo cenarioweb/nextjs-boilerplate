@@ -18,11 +18,12 @@ const Home: React.FC = () => {
       </Head>
       <Flex
         direction="row-reverse"
-        alignItems="center"
+        alignItems={{ base: 'stretch', md: 'center' }}
         width="100vw"
         height="100vh"
-        padding="60px"
+        padding={{ base: '20px', md: '60px' }}
         position="relative"
+        overflow="hidden"
       >
         <FormForgotPassword />
       </Flex>

@@ -1,4 +1,5 @@
 import FormLogin from './FormLogin';
 import InputText from './InputText';
+import InputPassword from './InputPassword';
 
-export { FormLogin, InputText };
+export { FormLogin, InputText, InputPassword };

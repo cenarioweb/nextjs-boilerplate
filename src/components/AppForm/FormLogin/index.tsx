@@ -5,10 +5,11 @@ import { motion } from 'framer-motion';
 import { Box, Button, Heading, Text } from '@chakra-ui/react';
 
 import AppBox from '../../AppBox';
-import InputText from '../InputText';
+import { InputText, InputPassword } from '..';
 
 import logoImg from '../../../assets/images/logo-light-color-mode.svg';
 import AppLink from '../../AppLink';
+import MotionBox from '../../MotionBox';
 
 const FormLogin: React.FC = () => {
   const handleSubmit = useCallback(() => {
@@ -16,16 +17,18 @@ const FormLogin: React.FC = () => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.7, y: -100 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
+    <MotionBox
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      width={{ base: '100%', md: 'auto' }}
     >
       <AppBox
         display="flex"
         flexDirection="column"
-        justifyContent="stretch"
-        width="480px"
+        justifyContent="center"
+        width={{ base: '100%', md: '480px' }}
         padding={{ base: '40px 30px', md: '40px 60px' }}
+        height="100%"
       >
         <Image src={logoImg} alt="Logo" width={258} height={70} />
 
@@ -40,12 +43,11 @@ const FormLogin: React.FC = () => {
               label="Seu e-mail"
               placeholder="usuario@empresa.com"
             />
-            <InputText
+            <InputPassword
               id="password"
               name="password"
               label="Sua senha"
-              placeholder="s3nhaf0rte"
-              isRequired
+              placeholder="********"
             />
             <Button type="submit" colorScheme="theme" isFullWidth>
               Entrar
@@ -68,7 +70,7 @@ const FormLogin: React.FC = () => {
           </Text>
         </Box>
       </AppBox>
-    </motion.div>
+    </MotionBox>
   );
 };
 

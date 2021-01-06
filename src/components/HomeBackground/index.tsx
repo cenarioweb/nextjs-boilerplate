@@ -20,7 +20,11 @@ const HomeBackground: React.FC<BackgroundProps> = ({ image, ribbonSide }) => (
     display="flex"
     alignItems="stretch"
   >
-    <Box width={{ base: '100%', md: '260px' }} background="gradient" />
+    <Box
+      width={{ base: '100%', md: '260px' }}
+      background="gradient"
+      transition="all 0.4s ease"
+    />
 
     <Box
       flexGrow={1}
