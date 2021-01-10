@@ -37,23 +37,23 @@ const FormForgotPassword: React.FC = () => {
 
         <Form onSubmit={handleSubmit}>
           <Heading textAlign="center" size="lg" margin="40px 0 20px 0">
-            Recuperar senha
+            Password recovery
           </Heading>
           <fieldset>
             <InputText
               id="email"
               name="email"
-              label="Seu e-mail"
-              placeholder="usuario@empresa.com"
+              label="Your e-mail"
+              placeholder="user@company.com"
             />
             <Button type="submit" colorScheme="theme" isFullWidth>
-              Recuperar
+              Recovery my password
             </Button>
           </fieldset>
           <fieldset>
             <AppLink href="/">
               <Button colorScheme="theme" variant="ghost" isFullWidth>
-                Voltar para login
+                Back to Sign In
               </Button>
             </AppLink>
           </fieldset>

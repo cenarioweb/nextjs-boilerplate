@@ -43,39 +43,39 @@ const FormLogin: React.FC = () => {
 
         <Form onSubmit={handleSubmit}>
           <Heading textAlign="center" size="lg" margin="40px 0 20px 0">
-            Acesso ao sistema
+            Sign In
           </Heading>
           <fieldset>
             <InputText
               id="email"
               name="email"
-              label="Seu e-mail"
-              placeholder="usuario@empresa.com"
+              label="Your e-mail"
+              placeholder="user@company.com"
             />
             <InputPassword
               id="password"
               name="password"
-              label="Sua senha"
+              label="Your Password"
               placeholder="********"
             />
             <Button type="submit" colorScheme="theme" isFullWidth>
-              Entrar
+              Go
             </Button>
           </fieldset>
           <fieldset>
             <AppLink href="/forgot-password">
               <Button colorScheme="theme" variant="ghost" isFullWidth>
-                Esqueci minha senha
+                Lost password?
               </Button>
             </AppLink>
           </fieldset>
         </Form>
         <Box marginTop="40px">
           <Text>
-            <AppLink href="#">Termos de uso</AppLink>
+            <AppLink href="#">Terms of Service</AppLink>
           </Text>
           <Text>
-            <AppLink href="#">Política de privacidade</AppLink>
+            <AppLink href="#">Privacy Statement</AppLink>
           </Text>
         </Box>
       </AppBox>

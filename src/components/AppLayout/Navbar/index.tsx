@@ -30,38 +30,38 @@ interface MenuItemProps {
 const menu: MenuItemProps[] = [
   {
     id: 'dashboard',
-    label: 'Página inicial',
+    label: 'Dashboard',
     href: '/dashboard',
     icon: <BiHomeAlt size="18" />,
   },
   {
-    id: 'colaboradores',
-    label: 'Colaboradores',
-    href: '/colaborador',
+    id: 'employees',
+    label: 'Employees',
+    href: '#',
     icon: <BiUser size="18" />,
   },
   {
-    id: 'kanban',
-    label: 'Equipes',
-    href: '/equipe',
+    id: 'teams',
+    label: 'Teams',
+    href: '#',
     icon: <BiGroup size="18" />,
   },
   {
-    id: 'reunioes',
-    label: 'Cargos',
-    href: '/cargo',
+    id: 'positions',
+    label: 'Positions',
+    href: '#',
     icon: <BiIdCard size="18" />,
   },
   {
-    id: 'avcorp',
-    label: 'Setores',
-    href: '/setor',
+    id: 'department',
+    label: 'Department',
+    href: '#',
     icon: <BiHive size="18" />,
   },
   {
-    id: 'unidades',
-    label: 'Unidades',
-    href: '/unidade',
+    id: 'branches',
+    label: 'Branches',
+    href: '#',
     icon: <BiBuildings size="18" />,
   },
 ];
@@ -113,7 +113,7 @@ const Navbar: React.FC = () => {
 
         <List spacing={0} width="100%" padding="10px">
           <ListItem padding="0">
-            <Link href="/configuracoes" passHref>
+            <Link href="#" passHref>
               <chakra.a
                 display="flex"
                 flexDirection="row"
@@ -128,7 +128,7 @@ const Navbar: React.FC = () => {
                 }}
               >
                 <Text lineHeight={1} fontSize="md" fontWeight="semibold">
-                  Configurações
+                  Settings
                 </Text>
                 <BiCog />
               </chakra.a>

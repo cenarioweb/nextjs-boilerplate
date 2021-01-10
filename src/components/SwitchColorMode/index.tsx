@@ -9,11 +9,11 @@ const SwitchColorMode: React.FC = () => {
     <Tooltip
       hasArrow
       shouldWrapChildren
-      label={colorMode === 'light' ? 'Modo escuro' : 'Modo claro'}
+      label={colorMode === 'light' ? 'Dark mode' : 'Light mode'}
     >
       <IconButton
         onClick={toggleColorMode}
-        aria-label={colorMode === 'light' ? 'Modo escuro' : 'Modo claro'}
+        aria-label={colorMode === 'light' ? 'Dark mode' : 'Light mode'}
         icon={colorMode === 'light' ? <FiMoon /> : <FiSun />}
         variant="ghost"
       />

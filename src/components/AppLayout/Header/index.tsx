@@ -17,7 +17,7 @@ import darkModeLogo from '../../../assets/images/logo-dark-color-mode.svg';
 import SwitchColorMode from '../../SwitchColorMode';
 
 const Header: React.FC = () => {
-  const bgColor = useColorModeValue('white', 'black');
+  const bgColor = useColorModeValue('white', 'gray.900');
   const logoImg = useColorModeValue(lightModeLogo, darkModeLogo);
 
   return (
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
           />
         </HStack>
 
-        <Avatar size="md" name="John Doe" src="/assets/images/avatar.png" />
+        <Avatar size="md" name="John" src="/assets/images/avatar.png" />
       </Flex>
     </Flex>
   );

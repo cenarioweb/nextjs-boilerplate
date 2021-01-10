@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         {format(new Date(), 'yyyy')} &copy; CODE Soft Development
       </Text>
       <Text fontSize="sm" color={textColor}>
-        Termos de uso | Política de privacidade
+        Terms of Service | Privacy Statement
       </Text>
     </Flex>
   );

@@ -91,7 +91,7 @@ const InputPassword: React.FC<InputProps> = ({
           onClick={handleTogglePassword}
         >
           <Tooltip
-            label={isVisible ? 'Ocultar senha' : 'Exibir senha'}
+            label={isVisible ? 'Hide password' : 'Show password'}
             fontSize="md"
             placement="top"
             shouldWrapChildren
