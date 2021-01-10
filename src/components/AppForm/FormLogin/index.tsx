@@ -1,16 +1,26 @@
 import React, { useCallback } from 'react';
 import Image from 'next/image';
 import { Form } from '@unform/web';
-import { Box, Button, Heading, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Heading,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react';
 
 import AppBox from '../../AppBox';
 import { InputText, InputPassword } from '..';
 
-import logoImg from '../../../assets/images/logo-light-color-mode.svg';
+import lightModeLogo from '../../../assets/images/logo-light-color-mode.svg';
+import darkModeLogo from '../../../assets/images/logo-dark-color-mode.svg';
+
 import AppLink from '../../AppLink';
 import MotionBox from '../../MotionBox';
 
 const FormLogin: React.FC = () => {
+  const logoImg = useColorModeValue(lightModeLogo, darkModeLogo);
+
   const handleSubmit = useCallback(() => {
     return null;
   }, []);

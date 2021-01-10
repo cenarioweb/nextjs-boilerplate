@@ -1,4 +1,12 @@
-import { Box, Flex, FormLabel, Input, Text, Tooltip } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  FormLabel,
+  Input,
+  Text,
+  Tooltip,
+  useColorModeValue,
+} from '@chakra-ui/react';
 import React, { useCallback, useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
@@ -17,6 +25,11 @@ const InputPassword: React.FC<InputProps> = ({
   placeholder,
   isRequired,
 }) => {
+  const labelColor = useColorModeValue('gray.400', 'gray.500');
+  const bgColor = useColorModeValue('white', 'black');
+  const borderColor = useColorModeValue('gray.200', 'gray.700');
+  const placeHolderColor = useColorModeValue('gray.400', 'gray.600');
+
   // alterando a cor da borda quando o input recebe o foco
   const [isFocused, setIsFocused] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -35,9 +48,9 @@ const InputPassword: React.FC<InputProps> = ({
 
   return (
     <Box
-      bgColor="#ffffff"
+      bgColor={bgColor}
       borderWidth="1px"
-      borderColor={isFocused ? 'theme.300' : 'gray.200'}
+      borderColor={isFocused ? 'theme.300' : borderColor}
       borderStyle="solid"
       borderRadius="md"
       marginBottom={2}
@@ -48,7 +61,7 @@ const InputPassword: React.FC<InputProps> = ({
         fontSize="sm"
         fontWeight="normal"
         margin="0"
-        color="gray.500"
+        color={labelColor}
       >
         {label}
         {isRequired && (
@@ -66,7 +79,7 @@ const InputPassword: React.FC<InputProps> = ({
           id={id}
           name={name}
           placeholder={placeholder}
-          _placeholder={{ color: 'gray.300' }}
+          _placeholder={{ color: placeHolderColor }}
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
         />

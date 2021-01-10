@@ -1,18 +1,20 @@
 import React from 'react';
-import { Grid, GridItem } from '@chakra-ui/react';
+import { Grid, GridItem, useColorModeValue } from '@chakra-ui/react';
 
 import Header from './Header';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 const AppLayout: React.FC = ({ children }) => {
+  const bgColor = useColorModeValue('bgLightColorMode', 'bgDarkColorMode');
+
   return (
     <Grid
       w="100vw"
       h="100vh"
       templateRows="70px 1fr auto"
       templateColumns="auto 1fr"
-      bgColor="gray.200"
+      bgColor={bgColor}
     >
       <GridItem colSpan={2}>
         <Header />

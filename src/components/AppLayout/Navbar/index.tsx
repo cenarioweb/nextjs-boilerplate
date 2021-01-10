@@ -7,6 +7,7 @@ import {
   List,
   ListItem,
   Text,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import {
   BiBuildings,
@@ -66,6 +67,13 @@ const menu: MenuItemProps[] = [
 ];
 
 const Navbar: React.FC = () => {
+  const bgColor = useColorModeValue(
+    'widgetLightColorMode',
+    'widgetDarkColorMode',
+  );
+  const hoverColor = useColorModeValue('gray.100', 'gray.700');
+  const hoverTextColor = useColorModeValue('theme.500', 'theme.200');
+
   return (
     <Box height="100%" padding="20px 10px 20px 20px">
       <Flex
@@ -74,7 +82,7 @@ const Navbar: React.FC = () => {
         height="100%"
         width="250px"
         borderRadius="md"
-        bgColor="gray.50"
+        bgColor={bgColor}
       >
         <List spacing={0} width="100%" padding="10px">
           {menu.map(item => (
@@ -88,7 +96,10 @@ const Navbar: React.FC = () => {
                   fontWeight="semibold"
                   padding="12px"
                   borderRadius="md"
-                  _hover={{ color: 'theme.500', backgroundColor: 'gray.100' }}
+                  _hover={{
+                    color: hoverTextColor,
+                    backgroundColor: hoverColor,
+                  }}
                 >
                   <Text lineHeight={1} fontSize="md" fontWeight="semibold">
                     {item.label}
@@ -111,7 +122,10 @@ const Navbar: React.FC = () => {
                 fontWeight="semibold"
                 padding="12px"
                 borderRadius="md"
-                _hover={{ color: 'theme.500', backgroundColor: 'gray.100' }}
+                _hover={{
+                  color: hoverTextColor,
+                  backgroundColor: hoverColor,
+                }}
               >
                 <Text lineHeight={1} fontSize="md" fontWeight="semibold">
                   Configurações

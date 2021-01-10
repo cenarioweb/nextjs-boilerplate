@@ -22,6 +22,10 @@ const theme = {
     bold: 700,
   },
   colors: {
+    bgDarkColorMode: '#050717',
+    bgLightColorMode: '#e2e8f0',
+    widgetDarkColorMode: '#0e1726',
+    widgetLightColorMode: '#f7fafc',
     gradient:
       'linear-gradient(135deg, hsla(312, 100%, 50%, 1) 0%, hsla(240, 50%, 40%, 1) 100%)',
     theme: {
