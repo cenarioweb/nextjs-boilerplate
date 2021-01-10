@@ -2,13 +2,9 @@
   <img src="./public/assets/readme/banner.jpg" width="100%" alt="Banner" />
 </p>
 
----
-
 ## About
 
-This is a front-end project application boilerplate build with React using [Next.js](https://nextjs.org), [TypeScript](https://www.typescriptlang.org), [ESLint](https://eslint.org), [Prettier](https://prettier.io) and [Chakra UI](https://chakra-ui.com),
-
----
+This is a ready [Next.js](https://nextjs.org) code structure with [TypeScript](https://www.typescriptlang.org), [ESLint](https://eslint.org), [Chakra UI](https://chakra-ui.com) and [Prettier](https://prettier.io) to start new projects.
 
 ## How it works
 
@@ -24,7 +20,7 @@ Before you begin, you will need to have the following tools installed on your ma
 
 In addition, it is good to have an editor to work with the code like [Visual Studio Code](https://code.visualstudio.com/).
 
-#### Running the web application
+#### Running the application
 
 ```bash
 
@@ -44,8 +40,6 @@ $ yarn dev
 
 ```
 
----
-
 ## Layout
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: space-around;">
@@ -53,14 +47,13 @@ $ yarn dev
   <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-forgot-password.jpg" width="280px">
 </p>
 
----
-
 ## Status Project: In Development
 
 ### Features
 
 - [x] Login page
 - [x] Recovery password page
+- [ ] Form validation
 - [ ] Dashboard layout
   - [ ] Header
   - [ ] Navbar
@@ -73,20 +66,23 @@ $ yarn dev
   - [ ] Checkbox
   - [ ] Radio
 
----
-
-
 ## Tech Stack
 
-The following tools were used in the construction of the project:
+The following tools were used in the construction of the project. Open the links to know more.
 
-#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+-   [React](https://reactjs.org)
+-   [Next.js](https://nextjs.org)
+-   [Chakra UI](https://chakra-ui.com)
+-   [Framer Motion](https://www.framer.com/motion)
+-   [TypeScript](https://www.typescriptlang.org)
+-   [ESLint](https://eslint.org)
+-   [Prettier](https://prettier.io)
+-   [React Icons](https://react-icons.github.io/react-icons)
+-   [Unform](https://unform.dev)
+-   [Yup](https://github.com/jquense/yup)
+-   [EditorConfig](https://editorConfig.org)
 
--   **[Next.js](https://nextjs.org)**
--   **[React Icons](https://react-icons.github.io/react-icons/)**
--   **[Unform](https://unform.dev)**
-
----
+Check *package.json* for more packages include.
 
 ## Author
 
@@ -97,13 +93,11 @@ The following tools were used in the construction of the project:
 
 [![Badge](https://img.shields.io/badge/-GitHub-181717?logoColor=ffffff&color=181717&labelColor=181717&style=flat&logo=GitHub)](https://github.com/carlos3duardo)
 [![Badge](https://img.shields.io/badge/-LinkedIn-0077b5?logoColor=ffffff&color=0077b5&labelColor=0077b5&style=flat&logo=linkedin)](https://www.linkedin.com/in/cenarioweb)
-[![Badge](https://img.shields.io/badge/-Instagram-E4405F?style=flat&labelColor=E4405F&logoColor=ffffff&logo=instagram)](https://www.linkedin.com/in/cenarioweb)
+[![Badge](https://img.shields.io/badge/-Instagram-E4405F?style=flat&labelColor=E4405F&logoColor=ffffff&logo=instagram)](https://www.instagram.com/carloseduardo)
 [![Badge](https://img.shields.io/badge/-Twitter-1da1f2?style=flat&labelColor=1da1f2&logoColor=ffffff&logo=twitter)](https://www.twitter.com/carlos3duardo)
 [![Badge](https://img.shields.io/badge/-E--mail-d14836?style=flat&labelColor=d14836&logoColor=ffffff&logo=gmail)](mailto:carloseduardo@cenarioweb.com.br)
 
 </div>
-
----
 
 ## License
 

@@ -1,7 +1,6 @@
 import React, { useCallback } from 'react';
 import Image from 'next/image';
 import { Form } from '@unform/web';
-import { motion } from 'framer-motion';
 import { Box, Button, Heading, Text } from '@chakra-ui/react';
 
 import AppBox from '../../AppBox';
