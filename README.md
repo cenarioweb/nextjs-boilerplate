@@ -42,9 +42,24 @@ $ yarn dev
 
 ## Layout
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: space-around;">
-  <img alt="Login" title="Login" src="./public/assets/readme/screenshot-login.jpg" width="280px">
-  <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-forgot-password.jpg" width="280px">
+### Light mode
+
+<p align="center" style="display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 10px; row-gap: 10px; margin: 0 auto;">
+  <img alt="Login" title="Login" src="./public/assets/readme/screenshot-login-light.jpg" width="280px">
+
+  <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-forgot-password-light.jpg" width="280px">
+
+  <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-dashboard-light.jpg" width="280px">
+</p>
+
+### Dark mode
+
+<p align="center" style="display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 10px; row-gap: 10px; margin: 0 auto;">
+  <img alt="Login" title="Login" src="./public/assets/readme/screenshot-login-dark.jpg" width="280px">
+
+  <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-forgot-password-dark.jpg" width="280px">
+
+  <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-dashboard-dark.jpg" width="280px">
 </p>
 
 ## Status Project: In Development
