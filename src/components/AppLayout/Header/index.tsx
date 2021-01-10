@@ -8,7 +8,13 @@ import logoImg from '../../../assets/images/logo-light-color-mode.svg';
 
 const Header: React.FC = () => {
   return (
-    <Flex dir="row" align="center" justify="space-between" height="70px">
+    <Flex
+      dir="row"
+      align="center"
+      justify="space-between"
+      height="70px"
+      bgColor="white"
+    >
       <Flex dir="row" align="center" padding="0 0 0 20px">
         <IconButton aria-label="Menu" variant="ghost" icon={<FaBars />} />
         <Box margin="0 0 0 10px" lineHeight="1">
