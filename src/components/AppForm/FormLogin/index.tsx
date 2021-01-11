@@ -59,7 +59,7 @@ const FormLogin: React.FC = () => {
               placeholder="********"
             />
             <Button type="submit" colorScheme="theme" isFullWidth>
-              Go
+              Let me in
             </Button>
           </fieldset>
           <fieldset>
