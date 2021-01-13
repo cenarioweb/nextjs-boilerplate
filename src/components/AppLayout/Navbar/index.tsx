@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   Box,
   chakra,
@@ -20,6 +20,8 @@ import {
 } from 'react-icons/bi';
 import Link from 'next/link';
 
+import { SettingsContext } from '../../../contexts/SettingsContext';
+
 interface MenuItemProps {
   id: string;
   label: string;
@@ -37,31 +39,31 @@ const menu: MenuItemProps[] = [
   {
     id: 'employees',
     label: 'Employees',
-    href: '#',
+    href: '/dashboard',
     icon: <BiUser size="18" />,
   },
   {
     id: 'teams',
     label: 'Teams',
-    href: '#',
+    href: '/dashboard',
     icon: <BiGroup size="18" />,
   },
   {
     id: 'positions',
     label: 'Positions',
-    href: '#',
+    href: '/dashboard',
     icon: <BiIdCard size="18" />,
   },
   {
     id: 'department',
     label: 'Department',
-    href: '#',
+    href: '/dashboard',
     icon: <BiHive size="18" />,
   },
   {
     id: 'branches',
     label: 'Branches',
-    href: '#',
+    href: '/dashboard',
     icon: <BiBuildings size="18" />,
   },
 ];
@@ -74,15 +76,20 @@ const Navbar: React.FC = () => {
   const hoverColor = useColorModeValue('gray.100', 'gray.700');
   const hoverTextColor = useColorModeValue('theme.500', 'theme.200');
 
+  const { data } = useContext(SettingsContext);
+
+  const navbarWidth = data.navbar === 'showLabels' ? '250px' : 'auto';
+  const navbarLabel = data.navbar === 'showLabels' ? 'block' : 'none';
+
   return (
     <Box height="100%" padding="20px 10px 20px 20px">
       <Flex
         direction="column"
         justify="space-between"
         height="100%"
-        width="250px"
         borderRadius="md"
         bgColor={bgColor}
+        width={navbarWidth}
       >
         <List spacing={0} width="100%" padding="10px">
           {menu.map(item => (
@@ -101,7 +108,12 @@ const Navbar: React.FC = () => {
                     backgroundColor: hoverColor,
                   }}
                 >
-                  <Text lineHeight={1} fontSize="md" fontWeight="semibold">
+                  <Text
+                    lineHeight={1}
+                    fontSize="md"
+                    fontWeight="semibold"
+                    display={navbarLabel}
+                  >
                     {item.label}
                   </Text>
                   {item.icon}
@@ -113,7 +125,7 @@ const Navbar: React.FC = () => {
 
         <List spacing={0} width="100%" padding="10px">
           <ListItem padding="0">
-            <Link href="#" passHref>
+            <Link href="/dashboard" passHref>
               <chakra.a
                 display="flex"
                 flexDirection="row"
@@ -127,7 +139,12 @@ const Navbar: React.FC = () => {
                   backgroundColor: hoverColor,
                 }}
               >
-                <Text lineHeight={1} fontSize="md" fontWeight="semibold">
+                <Text
+                  lineHeight={1}
+                  fontSize="md"
+                  fontWeight="semibold"
+                  display={navbarLabel}
+                >
                   Settings
                 </Text>
                 <BiCog />

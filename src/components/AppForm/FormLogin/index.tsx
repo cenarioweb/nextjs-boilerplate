@@ -72,10 +72,10 @@ const FormLogin: React.FC = () => {
         </Form>
         <Box marginTop="40px">
           <Text>
-            <AppLink href="#">Terms of Service</AppLink>
+            <AppLink href="/">Terms of Service</AppLink>
           </Text>
           <Text>
-            <AppLink href="#">Privacy Statement</AppLink>
+            <AppLink href="/">Privacy Statement</AppLink>
           </Text>
         </Box>
       </AppBox>

@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react';
 
 import { addDays, format } from 'date-fns';
+import { useRouter } from 'next/router';
 import footerImg from './footer.png';
 import AppLink from '../../AppLink';
 
@@ -43,7 +44,10 @@ const User: React.FC<UserProps> = ({ name, avatarUri, birthDate }) => {
 
 const NextBirthdays: React.FC = () => {
   const bgColor = useColorModeValue('purple.300', 'purple.600');
-  const linkColor = useColorModeValue('purple.800', 'purple.300');
+
+  const router = useRouter();
+
+  const currentUrl = router.pathname;
 
   return (
     <Flex
@@ -76,7 +80,7 @@ const NextBirthdays: React.FC = () => {
         </ListItem>
       </List>
       <Flex margin="10px 0 0 0" align="center" justify="center">
-        <AppLink href="#">
+        <AppLink href={currentUrl}>
           <Button size="sm" variant="ghost" colorScheme="purple">
             View more
           </Button>

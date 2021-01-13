@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import {
   Box,
   chakra,
@@ -68,27 +69,31 @@ const Welcome: React.FC = () => {
   const bgColor = useColorModeValue('blue.200', 'blue.700');
   const welcomeImg = useColorModeValue(imgLightMode, imgDarkMode);
 
+  const router = useRouter();
+
+  const currentUrl = router.pathname;
+
   const notices: NoticeProps[] = [
     {
       text: 'You have 3 overdue tasks.',
-      href: '#',
+      href: currentUrl,
       icon: <HiOutlineExclamationCircle />,
       textColor: useColorModeValue('red.500', 'red.400'),
       hoverColor: useColorModeValue('red.700', 'red.200'),
     },
     {
       text: 'You have 2 tasks to complete this week.',
-      href: '#',
+      href: currentUrl,
       icon: <HiOutlineCalendar />,
     },
     {
       text: '3 tasks have not yet started.',
-      href: '#',
+      href: currentUrl,
       icon: <HiOutlineClock />,
     },
     {
       text: 'No meeting scheduled for the next 7 days.',
-      href: '',
+      href: currentUrl,
       icon: <HiOutlineChatAlt2 />,
     },
   ];
