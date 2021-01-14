@@ -1,47 +1,38 @@
-import React, { createContext, useCallback, useState } from 'react';
-
-interface SettingsDataInterface {
-  navbar: string;
-}
+import React, { createContext, useCallback, useEffect, useState } from 'react';
 
 interface SettingsProps {
-  data: SettingsDataInterface;
+  navbar: string;
   toggleNavbar(): void;
 }
 
 const SettingsContext = createContext<SettingsProps>({} as SettingsProps);
 
 const SettingsProvider: React.FC = ({ children }) => {
-  const [data, SetData] = useState<SettingsDataInterface>(() => {
-    const navbar =
-      typeof localStorage !== 'undefined'
-        ? localStorage.getItem('@code:layout')
-        : null;
+  const [value, setValue] = useState('default');
+
+  useEffect(() => {
+    const navbar = localStorage.getItem('@code:navbar');
 
     if (navbar) {
-      return JSON.parse(navbar);
+      setValue(navbar);
     }
-
-    return {
-      navbar: 'showLabels',
-    };
-  });
+  }, [setValue]);
 
   const toggleNavbar = useCallback(() => {
-    const newValue = data.navbar === 'showLabels' ? 'hideLabels' : 'showLabels';
+    const newValue = value === 'default' ? 'minified' : 'default';
 
-    if (typeof localStorage !== 'undefined') {
-      localStorage.setItem(
-        '@code:layout',
-        JSON.stringify({ navbar: newValue }),
-      );
+    try {
+      localStorage.setItem('@code:navbar', newValue);
+
+      setValue(newValue);
+      return null;
+    } catch (err) {
+      return null;
     }
-
-    SetData({ navbar: newValue });
-  }, [data]);
+  }, [value]);
 
   return (
-    <SettingsContext.Provider value={{ data, toggleNavbar }}>
+    <SettingsContext.Provider value={{ navbar: value, toggleNavbar }}>
       {children}
     </SettingsContext.Provider>
   );

@@ -76,10 +76,10 @@ const Navbar: React.FC = () => {
   const hoverColor = useColorModeValue('gray.100', 'gray.700');
   const hoverTextColor = useColorModeValue('theme.500', 'theme.200');
 
-  const { data } = useContext(SettingsContext);
+  const { navbar } = useContext(SettingsContext);
 
-  const navbarWidth = data.navbar === 'showLabels' ? '250px' : 'auto';
-  const navbarLabel = data.navbar === 'showLabels' ? 'block' : 'none';
+  const navbarWidth = navbar === 'default' ? '250px' : 'auto';
+  const navbarLabel = navbar === 'default' ? 'block' : 'none';
 
   return (
     <Box height="100%" padding="20px 10px 20px 20px">
