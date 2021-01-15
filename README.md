@@ -1,34 +1,120 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="./public/assets/readme/banner.jpg" width="100%" alt="Banner" />
+</p>
 
-## Getting Started
+## About
 
-First, run the development server:
+This is a ready [Next.js](https://nextjs.org) code structure with [TypeScript](https://www.typescriptlang.org), [ESLint](https://eslint.org), [Chakra UI](https://chakra-ui.com) and [Prettier](https://prettier.io) to start new projects.
+
+## How it works
+
+This project is only a front-end part to be used as client for a API application:
+
+### Pre-requisites
+
+Before you begin, you will need to have the following tools installed on your machine:
+
+- [Git](https://git-scm.com)
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+
+In addition, it is good to have an editor to work with the code like [Visual Studio Code](https://code.visualstudio.com/).
+
+#### Running the application
 
 ```bash
-npm run dev
-# or
-yarn dev
+
+# Clone this repository
+$ git clone git@github.com:cenarioweb/nextjs-boilerplate.git your-project
+
+# Access the project folder in your terminal
+$ cd your-project
+
+# Install the dependencies
+$ yarn
+
+# Run the application in development mode
+$ yarn dev
+
+# The application will open on the port: 3000 - go to http://localhost:3000
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Layout
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Light mode
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<p align="center" style="display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 10px; row-gap: 10px; margin: 0 auto;">
+  <img alt="Login" title="Login" src="./public/assets/readme/screenshot-login-light.jpg" width="280px">
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-forgot-password-light.jpg" width="280px">
 
-## Learn More
+  <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-dashboard-light.jpg" width="280px">
+</p>
 
-To learn more about Next.js, take a look at the following resources:
+### Dark mode
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<p align="center" style="display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 10px; row-gap: 10px; margin: 0 auto;">
+  <img alt="Login" title="Login" src="./public/assets/readme/screenshot-login-dark.jpg" width="280px">
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-forgot-password-dark.jpg" width="280px">
 
-## Deploy on Vercel
+  <img alt="Forgot Password" title="Forgot Password" src="./public/assets/readme/screenshot-dashboard-dark.jpg" width="280px">
+</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Status Project: In Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Features
+
+- [x] Login page
+- [x] Recovery password page
+- [ ] Form validation
+- [ ] Dashboard layout
+  - [ ] Header
+  - [ ] Navbar
+  - [ ] Footer
+- [ ] Switch light/dark mode
+- [ ] Form elements
+  - [x] Text input
+  - [x] Password input
+  - [ ] Select
+  - [ ] Checkbox
+  - [ ] Radio
+
+## Tech Stack
+
+The following tools were used in the construction of the project. Open the links to know more.
+
+-   [React](https://reactjs.org)
+-   [Next.js](https://nextjs.org)
+-   [Chakra UI](https://chakra-ui.com)
+-   [Framer Motion](https://www.framer.com/motion)
+-   [TypeScript](https://www.typescriptlang.org)
+-   [ESLint](https://eslint.org)
+-   [Prettier](https://prettier.io)
+-   [React Icons](https://react-icons.github.io/react-icons)
+-   [Unform](https://unform.dev)
+-   [Yup](https://github.com/jquense/yup)
+-   [EditorConfig](https://editorConfig.org)
+
+Check *package.json* for more packages include.
+
+## Author
+
+<div align="center">
+ <img style="border-radius: 50%;" src="https://secure.gravatar.com/avatar/c7fbbc88f749edbc04bb4e0471634a1d?s=64" width="64px;" alt=""/>
+ <br>
+ <b>Carlos Eduardo</b><br><br>
+
+[![Badge](https://img.shields.io/badge/-GitHub-181717?logoColor=ffffff&color=181717&labelColor=181717&style=flat&logo=GitHub)](https://github.com/carlos3duardo)
+[![Badge](https://img.shields.io/badge/-LinkedIn-0077b5?logoColor=ffffff&color=0077b5&labelColor=0077b5&style=flat&logo=linkedin)](https://www.linkedin.com/in/cenarioweb)
+[![Badge](https://img.shields.io/badge/-Instagram-E4405F?style=flat&labelColor=E4405F&logoColor=ffffff&logo=instagram)](https://www.instagram.com/carloseduardo)
+[![Badge](https://img.shields.io/badge/-Twitter-1da1f2?style=flat&labelColor=1da1f2&logoColor=ffffff&logo=twitter)](https://www.twitter.com/carlos3duardo)
+[![Badge](https://img.shields.io/badge/-E--mail-d14836?style=flat&labelColor=d14836&logoColor=ffffff&logo=gmail)](mailto:carloseduardo@cenarioweb.com.br)
+
+</div>
+
+## License
+
+This project is under the license [MIT](./LICENSE).
+
