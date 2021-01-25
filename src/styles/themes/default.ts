@@ -22,9 +22,9 @@ const theme = {
     bold: 700,
   },
   colors: {
-    bgDarkColorMode: '#212635',
+    bgDarkColorMode: '#2f3b50',
     bgLightColorMode: '#e2e8f0',
-    widgetDarkColorMode: '#2a3042',
+    widgetDarkColorMode: '#202836',
     widgetLightColorMode: '#f7fafc',
     gradient:
       'linear-gradient(135deg, hsla(312, 100%, 50%, 1) 0%, hsla(240, 50%, 40%, 1) 100%)',

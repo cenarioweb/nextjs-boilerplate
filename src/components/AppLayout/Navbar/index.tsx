@@ -12,6 +12,7 @@ import {
 import {
   BiBuildings,
   BiCog,
+  BiEdit,
   BiGroup,
   BiHive,
   BiHomeAlt,
@@ -37,10 +38,10 @@ const menu: MenuItemProps[] = [
     icon: <BiHomeAlt size="18" />,
   },
   {
-    id: 'employees',
-    label: 'Employees',
-    href: '/dashboard',
-    icon: <BiUser size="18" />,
+    id: 'forms',
+    label: 'Form Elements',
+    href: '/forms',
+    icon: <BiEdit size="18" />,
   },
   {
     id: 'teams',

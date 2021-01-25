@@ -1,5 +1,4 @@
 import {
-  border,
   Box,
   Flex,
   FormLabel,
@@ -27,8 +26,9 @@ const InputText: React.FC<InputProps> = ({
   textTransform,
 }) => {
   const labelColor = useColorModeValue('gray.400', 'gray.500');
-  const bgColor = useColorModeValue('white', 'black');
-  const borderColor = useColorModeValue('gray.200', 'gray.700');
+  const bgColor = useColorModeValue('#ffffff', '#151a23');
+  const borderColor = useColorModeValue('gray.200', '#283143');
+  const focusedBorderColor = useColorModeValue('theme.300', 'theme.600');
   const placeHolderColor = useColorModeValue('gray.400', 'gray.600');
 
   // alterando a cor da borda quando o input recebe o foco
@@ -46,7 +46,7 @@ const InputText: React.FC<InputProps> = ({
     <Box
       bgColor={bgColor}
       borderWidth="1px"
-      borderColor={isFocused ? 'theme.300' : borderColor}
+      borderColor={isFocused ? focusedBorderColor : borderColor}
       borderStyle="solid"
       borderRadius="md"
       marginBottom={2}
